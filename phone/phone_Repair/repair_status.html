@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/pubulic.css">
+    <link rel="stylesheet" href="./css/repair_status.css">
+    <title>故障描述</title>
+</head>
+<body>
+     <div id="repair_status">
+           <h3>故障描述-苹果iPhone7</h3>
+           <ul class="item">
+               <li class="clear"><i><img src="img/selected.png" alt=""></i><span class="lf">屏幕故障</span><span class="rg"></span></li>
+               <li class="clear"><i><img src="img/selected.png" alt=""></i><span class="lf">主板故障</span><span class="rg"></span></li>
+               <li class="clear"><i><img src="img/selected.png" alt=""></i><span class="lf">不开机故障</span><span class="rg"></span></li>
+               <li class="clear"><i><img src="img/selected.png" alt=""></i><span class="lf">电池故障</span><span class="rg"></span></li>
+               <li class="clear"><i><img src="img/selected.png" alt=""></i><span class="lf">内存扩容</span><span class="rg"></span></li>
+               <li class="clear"><i><img src="img/selected.png" alt=""></i><span class="lf">音频故障</span><span class="rg"></span></li>
+           </ul>
+         <!--底部-->
+         <button class="btn" onclick="repair_status.jump()">
+            立即预约（￥689）
+         </button>
+     </div>
+      <!--克隆遮罩-->
+      <div id="DeatilsClone" style="display: none">
+          <div id="statusDeatils">
+                <div class="mask"></div>
+                <div class="content">
+                    <ul>
+
+                    </ul>
+                       <div class="maskBtn clear">
+                             <span class="YesBtn lf active">确定</span>
+                             <span class="NoBtn lf">取消</span>
+                       </div>
+              </div>
+          </div>
+      </div>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/repair_status.js"></script>
+</html>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/pubulic.css">
+    <link rel="stylesheet" href="./css/phone_Order.css">
+    <title>优机汇回收</title>
+</head>
+<body>
+    <div id="phone_Order">
+         <!--订单成功-->
+         <div class="success">
+             <div class="icon"><img src="img/success.png" alt=""></div>
+             <div class="sign"><span>订单提交成功</span><i>2510</i>元</div>
+         </div>
+         <!--回收须知-->
+         <div class="Notice">
+             <h3 >回收须知</h3>
+         </div>
+         <!--提示-->
+         <div class="Prompt">
+             <ul>
+                 <li>工作人员将会致电联系您</li>
+                 <li>上门回收成功，现场支付现金</li>
+                 <li>邮寄回收成功，转账之您的支付宝和银行账户</li>
+             </ul>
+         </div>
+        <!--底部-->
+        <button class="btn" id="search">
+            订单查询
+        </button>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script>
+        $('#search').unbind('click').bind('click',function () {
+            location.href="My_Order.html";
+        })
+    </script>
+</body>
+</html>

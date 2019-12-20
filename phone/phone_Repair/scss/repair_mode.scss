@@ -1,0 +1,104 @@
+#repair_mode{
+  background: #f3f2f8;
+  font-size: 0.3rem;
+  width: 100%;
+  position: absolute;
+  top:0;
+  margin: auto;
+  min-height: 100%;
+}
+#repair_mode .return{
+  background: #ffffff;
+  margin-bottom: 0.24rem;
+  .tishi{
+    text-align: center;
+    font-size: 0.23rem;
+    color: #b8b8b8;
+  }
+}
+#repair_mode .price{
+  text-align: center;
+  padding-top: 0.4rem;
+}
+#repair_mode .price .num{
+  font-size:0.9rem;
+  padding-right: 0.26rem;
+}
+#repair_mode .return_mode{
+  padding: 0.36rem 1.34rem 0;
+}
+#repair_mode .return_mode span{
+  display: block;
+  padding: 0.43rem 0.16rem;
+  border-bottom:0.09rem solid #ffffff;
+}
+#repair_mode .return_mode span.active{
+  border-bottom:0.09rem solid #4ea8f4 ;
+}
+#repair_mode .return_mode span.right{
+  margin-left: 1.6rem;
+}
+#repair_mode .content{
+  padding: 0.24rem;
+}
+#repair_mode .content ul{
+  background: #ffffff;
+  border-radius: 0.1rem;
+  padding: 0 0.32rem;
+  display: none;
+}
+#repair_mode .content ul.active{
+  display: block;
+}
+
+#repair_mode .content ul li{
+  border-bottom: 0.02rem solid #d9d9d9;
+  padding: 0.35rem 0;
+  .sign{
+    width: 0.34rem;
+    height: 0.34rem;
+    margin-right: 0.17rem;
+    img{
+      width: 100%;
+      height:100%;
+    }
+  }
+}
+#repair_mode .content ul li span{
+  display: block;
+  width: 1.5rem;
+}
+#repair_mode .content ul li input{
+  border: none;
+  outline: none;
+  width: 4.8rem;
+  line-height: 0.4rem;
+  font-size: 0.3rem;
+}
+#repair_mode .content ul li em{
+  color: #157efe;
+  font-style: normal;
+  margin-left: 0.6rem;
+}
+#repair_mode .bottom{
+  margin: 0.16rem 0.99rem;
+  background: #ffffff;
+  padding-left: 1.13rem;
+  padding-top: 0.34rem;
+  padding-bottom: 0.34rem;
+  color: #383838;
+  margin-bottom: 1rem;
+}
+#repair_mode .bottom .icon{
+  width: 0.55rem;
+  height: 0.55rem;
+}
+#repair_mode .bottom .icon img{
+  width: 100%;
+  height: 100%;
+}
+#repair_mode .bottom p{
+  font-size: 0.36rem;
+  padding-left: 0.28rem;
+  line-height: 0.55rem;
+}

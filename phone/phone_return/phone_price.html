@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/pubulic.css">
+    <link rel="stylesheet" href="./css/phone_price.css">
+    <link rel="stylesheet" href="./css/mobileSelect.css">
+    <title>优机汇回收</title>
+</head>
+<body>
+     <div id="phone_price">
+          <div class="return">
+             <div class="price"><s class="num">2510</s><span>元</span></div>
+              <div class="return_mode clear">
+                  <span class="lf active">上门回收</span>
+                  <span class="lf right">邮寄回收</span>
+              </div>
+          </div>
+          <div class="content">
+              <!--上门回收-->
+              <ul class="active">
+                  <li class="clear"><i class="lf sign"><img src="img/selected.png" alt=""></i><p class='lf'style="font-weight: bold">上门交易（请填写上门回收地点）</p></li>
+                  <li class="clear"><span class="lf">地址：</span><input type="text" class="lf"></li>
+                  <li class="clear"><span class="lf">联系人：</span><input type="text" class="lf"></li>
+                  <li class="clear"><span class="lf">联系电话：</span><input type="tel" class="lf"></li>
+                  <li class="clear"style="border: none" ><span class="lf" >预约时间：</span><div class="lf" id="changeTime_1">2018年02月02日（周五）</div><em onclick="triggerBtn($(this))">更改</em></li>
+              </ul>
+              <ul>
+                  <li class="clear"><i class="lf sign"><img src="img/selected.png" alt=""></i><p class='lf'style="font-weight: bold">邮寄交易（请寄往以下地址）</p></li>
+                  <li class="send">
+                      <p>浙江省&nbsp;杭州市&nbsp;下城区&nbsp;金茂大厦9楼909</p>
+                      <p>收件人:优机汇前台</p>
+                      <p>联系电话:13905790001</p>
+                  </li>
+                  <li class="clear"style="border: none" ><span class="lf" >寄回时间：</span><div class="lf" id="changeTime_2">2018年02月02日（周五）</div><em onclick="triggerBtn($(this))">更改</em></li>
+              </ul>
+          </div>
+         <div class="bottom clear">
+             <div class="lf icon"><img src="img/iphone.png" alt=""></div>
+             <p class="lf"><a href="tel://400-820-9999" style="color: #393939">400-820-9999</a></p>
+         </div>
+         <!--底部-->
+         <button class="btn look">
+              立即回收
+         </button>
+     </div>
+     <script src="js/jquery.js"></script>
+     <script src="js/tool.js"></script>
+     <script src="js/mobileSelect.js"></script>
+     <script>
+         var yeardate=[];
+         var NewDate=new Date();
+         NewDate=NewDate.getTime();
+         for(var i=0;i<30;i++){
+             yeardate.push(get_date(NewDate));
+             NewDate += 86400000;
+         }
+         /*将时间戳改变成 X年X月X日；
+         *
+         *
+         * */
+         function get_date(tm) {
+             var Day = new Array("周日", "周一", "周二", "周三", "周四", "周五", "周六");
+             if(tm) {
+                 var d = new Date(tm); //根据时间戳生成的时间对象
+                 var date = (d.getFullYear()) + "年" +
+                     (d.getMonth() + 1) + "月" +
+                     (d.getDate()) + "日（"+Day[d.getDate()>=7?d.getDate()%7:d.getDate()]+"）"
+
+                 return date;
+             }
+
+         }
+         //时间转换方法（结束）
+         var mobileSelect1 = new MobileSelect({
+             trigger: '#changeTime_1',
+             title: '日期选择',
+             wheels: [
+                 {data: yeardate}
+             ],
+             position:[0], //初始化定位 打开时默认选中的哪个 如果不填默认为0
+             transitionEnd:function(indexArr, data){
+                 console.log(data);
+             },
+             callback:function(indexArr, data){
+                 //      console.log(data);
+
+             }
+         });
+         var mobileSelect2 = new MobileSelect({
+             trigger: '#changeTime_2',
+             title: '日期选择',
+             wheels: [
+                 {data: yeardate}
+             ],
+             position:[0], //初始化定位 打开时默认选中的哪个 如果不填默认为0
+             transitionEnd:function(indexArr, data){
+                 console.log(data);
+             },
+             callback:function(indexArr, data){
+                 //      console.log(data);
+
+             }
+         });
+         $('#phone_price .look').unbind('click').bind('click',function () {
+               location.href="phone_Order.html";
+         })
+         //切换回收方式
+         $('#phone_price .return_mode span').unbind('click').bind('click',function () {
+             var index=$(this).index();
+             $('#phone_price .return_mode span').removeClass('active');
+             $(this).addClass('active');
+             $('#phone_price .content ul').removeClass('active').eq(index).addClass('active');
+         })
+         //点击更改的效果
+         function triggerBtn(that) {
+             that.prev().trigger('click');
+         }
+     </script>
+</body>
+</html>

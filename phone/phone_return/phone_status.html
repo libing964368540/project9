@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/pubulic.css">
+    <link rel="stylesheet" href="./css/phone_status.css">
+    <title>优机汇回收</title>
+</head>
+<body>
+     <div id="phone_status">
+         <!--状态记录-->
+         <div class="status">
+             <div class="progress"></div>
+             <div class="Percentage clear">
+                 <p class="lf">选择结果和实际情况相符，将以最快的速度收款</p>
+                 <span class="rg"><em style="font-style: normal">0</em>/10</span>
+             </div>
+         </div>
+         <!--具体内容-->
+          <ul class="content">
+              <li class="Work">
+                  <span>11.功能情况（可多选、若无问题点击查看定价）</span>
+                  <dl>
+                      <dd><i></i><p>充电无反应/充电孔接触不良</p></dd>
+                      <dd><i></i><p>机身弯曲','触摸失灵/延迟</p></dd>
+                      <dd><i></i><p>wifi无法打开/无法连接</p></dd>
+                      <dd><i></i><p>无法开机/无法进入桌面</p></dd>
+                      <dd><i></i><p>通话功能不正常</p></dd>
+                      <dd><i></i><p>指纹无法完全录入和解锁</p></dd>
+                      <dd><i></i><p>拍摄画面模糊/抖动/有斑</p></dd>
+                      <dd><i></i><p>机身进水或受潮</p></dd>
+                      <dd><i></i><p>指南针功能不正常</p></dd>
+                  </dl>
+              </li>
+          </ul>
+         <!--底部-->
+         <button class="btn searchBtn">
+                 查询定价
+         </button>
+     </div>
+     <div id="statusClone">
+         <li>
+             <span class="title"></span>
+             <dl></dl>
+         </li>
+     </div>
+
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/phone_status.js"></script>
+<script>
+       $('#phone_status .searchBtn').unbind('click').bind('click',function () {
+           location.href="phone_price.html";
+       })
+</script>
+</html>

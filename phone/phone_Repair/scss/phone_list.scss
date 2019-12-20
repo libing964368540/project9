@@ -1,0 +1,69 @@
+#phone_list{
+  width: 100%;
+  background: #f3f2f8;
+  position: absolute;
+  top:0;
+  bottom:0;
+  margin: auto;
+  font-size: 0.12rem;
+}
+#phone_list .header{
+  margin: 0.16rem 0.99rem;
+  background: #ffffff;
+  padding-left: 1.13rem;
+  padding-top: 0.34rem;
+  padding-bottom: 0.34rem;
+  color: #383838;
+}
+#phone_list .header .icon{
+  width: 0.55rem;
+  height: 0.55rem;
+}
+#phone_list .header .icon img{
+  width: 100%;
+  height: 100%;
+}
+#phone_list .header p{
+  font-size: 0.36rem;
+  padding-left: 0.28rem;
+  line-height: 0.55rem;
+}
+#phone_list .content{
+  width: 100%;
+  position: absolute;
+  top:1.63rem;
+  bottom: 0;
+  margin: auto;
+  font-size: 0.28rem;
+  text-align: center;
+}
+
+#phone_list .content .left{
+  width: 27%;
+  line-height: 0.91rem;
+  height: 100%;
+  color: #5a626d;
+  overflow-y: auto;
+}
+#phone_list .content .left ul li{
+  padding: 0.01rem 0;
+  box-sizing: border-box;
+}
+#phone_list .content .left ul li.active{
+  background: #ffffff;
+}
+#phone_list .content .left ul li.active span{
+  display: block;
+  border-left:0.05rem solid #4d98fe ;
+  box-sizing: border-box;
+  color: #010101;
+  font-weight: bold;
+}
+#phone_list .content .right{
+  width: 73%;
+  height: 100%;
+  background: #ffffff;
+  line-height: 1.12rem;
+  color: #585858;
+  overflow-y: auto;
+}

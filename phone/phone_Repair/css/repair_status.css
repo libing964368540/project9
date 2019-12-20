@@ -1,0 +1,35 @@
+#repair_status {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  top: 0;
+  margin: auto;
+  background: #f3f2f8; }
+  #repair_status h3 {
+    font-size: 0.3rem;
+    font-weight: normal;
+    color: #343434;
+    padding: 0.44rem 0.41rem 0.48rem; }
+  #repair_status ul {
+    padding: 0 0.31rem; }
+    #repair_status ul li {
+      background: #ffffff;
+      font-size: 0.3rem;
+      padding: 0.44rem 0.45rem 0.44rem 0.89rem;
+      margin-bottom: 0.34rem;
+      border-radius: 0.1rem;
+      position: relative; }
+      #repair_status ul li i {
+        position: absolute;
+        left: 0.32rem;
+        width: 0.34rem;
+        height: 0.34rem;
+        font-size: 0;
+        display: none; }
+        #repair_status ul li i img {
+          width: 100%;
+          height: 100%; }
+    #repair_status ul li.active i {
+      display: block; }
+
+/*# sourceMappingURL=repair_status.css.map */

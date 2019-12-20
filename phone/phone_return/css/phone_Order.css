@@ -1,0 +1,53 @@
+#phone_Order {
+  background: #f3f2f8;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100%;
+  font-size: 0.3rem; }
+
+#phone_Order .success {
+  width: 100%;
+  background: #ffffff;
+  padding-top: 0.39rem;
+  padding-bottom: 1.18rem;
+  text-align: center;
+  margin-bottom: 0.25rem; }
+
+#phone_Order .success .icon {
+  width: 1.41rem;
+  height: 1.42rem;
+  margin: 0 auto;
+  margin-bottom: 0.47rem; }
+
+#phone_Order .success .icon img {
+  width: 100%;
+  height: 100%; }
+
+#phone_Order .success .sign {
+  color: #5b616d; }
+  #phone_Order .success .sign i {
+    font-style: normal;
+    padding: 0 0.1rem; }
+
+#phone_Order .success .sign span {
+  color: #0c0c0c; }
+
+#phone_Order .Notice {
+  width: 100%;
+  height: 4.1rem;
+  background: #ffffff;
+  box-sizing: border-box; }
+  #phone_Order .Notice h3 {
+    text-align: center;
+    font-weight: normal;
+    padding-top: 0.67rem; }
+
+#phone_Order .Prompt {
+  text-align: center;
+  line-height: 0.58rem;
+  color: #787878;
+  font-size: 0.25rem; }
+
+/*# sourceMappingURL=phone_Order.css.map */

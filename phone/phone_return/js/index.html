@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/pubulic.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>优机汇回收</title>
+</head>
+<body>
+     <div id="home_page">
+           <!--轮播图-->
+           <div class="banner">
+               <img src="img/banner.png" alt="">
+           </div>
+           <div class="content">
+                <ul>
+                    <li>
+                        <dl class="clear">
+                            <dt class="lf"><img src="img/cellphone.png" alt="手机"></dt>
+                            <dd class="lf">手机</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl class="clear">
+                            <dt class="lf"><img src="img/ipad.png" alt="平板"></dt>
+                            <dd class="lf">平板</dd>
+                        </dl>
+                    </li>
+                </ul>
+           </div>
+           <div class="bottom clear">
+               <div class="lf icon"><img src="img/iphone.png" alt=""></div>
+               <p class="lf"><a href="tel://400-820-9999" style="color: #393939">400-820-9999</a></p>
+           </div>
+     </div>
+     <script src="js/jquery.js"></script>
+<script>
+     $('#home_page ul li').unbind('clcik').bind('click',function () {
+         location.href='phone_list.html';
+     })
+</script>
+
+</body>
+</html>
